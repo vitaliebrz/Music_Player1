@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#152331, #000);
+    
+}
+:root{
+    --accent-color: #9b5cff;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    #trackImage{
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
+    #trackTitle{
+        color: white;
+        font-size: 32px;
+    }
+    .controls{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        padding: 15px;
+        border-radius: 100px;
+        border: 1px solid #ffffff25;
+        background-color: #ffffff05;
+        box-shadow: 0 2.5px 10px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    button{
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border: none;
+        border-radius: 100%;
+        color: black;
+        transition-duration: 250ms;
+        &:hover{
+            background-color: var(--accent-color);
+            color: white;
+            cursor: pointer;
+            transform: scale(1.15);
+            box-shadow: 0 2.5px 10px rgba(0, 0, 0, 0.25);
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+    
+}
